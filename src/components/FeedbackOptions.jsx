@@ -13,8 +13,7 @@ export function FeedbackOptions({ options, onLeaveFeedback }) {
             <button
               key={'btn_' + i}
               type="button"
-              name={i}
-              onClick={onLeaveFeedback}
+              onClick={() => onLeaveFeedback(i)}
               className={css[variant]}
             >
               {capitalCase(i)}

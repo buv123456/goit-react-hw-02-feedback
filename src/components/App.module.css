@@ -1,9 +1,11 @@
 .wrapper {
-    height: 100%;
+    height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url('../espresso.webp');
+    background-size: auto;
     gap: 40px;
     padding: 20px;
     align-items: center;

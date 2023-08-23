@@ -1,10 +1,10 @@
 .wrap {
     display: flex;
-    width: 100%;
+    width: 600px;
     justify-content: center;
     align-items: center;
     font-size: 30px;
     min-height: 250px;
-    background-color: greenyellow;
+    background-color: rgba(172, 255, 47, 0.5);
     border-radius: 15px;
 }

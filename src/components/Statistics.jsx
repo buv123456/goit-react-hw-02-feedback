@@ -10,8 +10,7 @@ export function Statistics({ entries, total, positivePercentage }) {
       <div className={css.feedWrap}>
         {entries.map(i => (
           <p key={i[0]} className={css.feed}>
-            <span>{capitalCase(i[0])}: </span>
-            <span className={css.span}>{i[1]}</span>
+            {capitalCase(i[0])}:<span className={css.span}>{i[1]}</span>
           </p>
         ))}
       </div>

@@ -1,25 +1,27 @@
 .bgGood {
+    min-height: 250px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
     padding: 10px;
     justify-content: center;
     align-items: center;
-    min-height: 250px;
-    background-color: greenyellow;
+    font-weight: 700;
+    background-color: rgba(172, 255, 47, 0.5);
     border-radius: 15px;
     transition: all 3s ease;
 }
 
 .bgBad {
     composes: bgGood;
-    background-color: rgba(247, 144, 144, 0.911);
+    background-color: rgba(247, 144, 144, 0.5);
 }
 
 .feedWrap,
 .statWrap {
-    width: 250px;
+    width: 240px;
+
 }
 
 .feed,
@@ -37,6 +39,5 @@
 }
 
 .positive {
-    font-weight: 500;
     scale: 1.1;
 }

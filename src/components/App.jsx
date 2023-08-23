@@ -12,8 +12,7 @@ export class App extends Component {
     bad: 0,
   };
 
-  handleOnClick = e => {
-    const { name } = e.currentTarget;
+  handleOnClick = name => {
     this.setState(prev => ({ [name]: prev[name] + 1 }));
   };
 
@@ -37,7 +36,7 @@ export class App extends Component {
             positivePercentage={this.countPositiveFeedbackPercentage()}
           />
         ) : (
-          <Notification message="There is no feedback yet" />
+          <Notification message="There is no feedback yet!" />
         )}
       </div>
     );
