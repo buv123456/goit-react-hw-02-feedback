@@ -25,6 +25,7 @@
     border-radius: 15px;
     border: none;
     transition: all 200ms ease;
+    cursor: pointer;
 }
 
 .btnBad:hover {
