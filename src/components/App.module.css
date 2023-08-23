@@ -1,0 +1,12 @@
+.wrapper {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    align-items: center;
+    font-size: 20px;
+    color: #010101;
+}

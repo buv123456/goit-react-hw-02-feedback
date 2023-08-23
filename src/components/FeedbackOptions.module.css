@@ -1,0 +1,55 @@
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    background-color: rgb(164, 244, 244);
+    border-radius: 15px;
+}
+
+.btnWrap {
+    display: flex;
+    gap: 30px;
+}
+
+.btnNeutral,
+.btnGood,
+.btnBad {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    transition: all 200ms ease;
+}
+
+.btnBad:hover {
+    scale: 1.2;
+    background-color: rgba(247, 144, 144, 0.911);
+    border-radius: 25px;
+    font-size: 22px;
+}
+
+.btnGood:hover {
+    scale: 1.2;
+    background-color: greenyellow;
+    border-radius: 25px;
+    font-size: 22px;
+}
+
+.btnNeutral:hover {
+    scale: 1.2;
+    background-color: lightgray;
+    border-radius: 25px;
+    font-size: 22px;
+}
+
+.btnGood:active,
+.btnBad:active,
+.btnNeutral:active {
+    scale: 1.05;
+}
