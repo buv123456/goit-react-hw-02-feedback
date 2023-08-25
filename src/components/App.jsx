@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import css from './App.module.css';
 
-import { Statistics } from './Statistics';
-import { Notification } from './Notification';
-import { FeedbackOptions } from './FeedbackOptions';
+import { Statistics } from './Statistics/Statistics';
+import { Notification } from './Notification/Notification';
+import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
+import { Section } from './Section/Section';
 
 export class App extends Component {
   state = {
@@ -24,7 +24,7 @@ export class App extends Component {
 
   render() {
     return (
-      <div className={css.wrapper}>
+      <Section title='What do you think about our "EXpresso"?'>
         <FeedbackOptions
           options={Object.keys(this.state)}
           onLeaveFeedback={this.handleOnClick}
@@ -38,7 +38,7 @@ export class App extends Component {
         ) : (
           <Notification message="There is no feedback yet!" />
         )}
-      </div>
+      </Section>
     );
   }
 }

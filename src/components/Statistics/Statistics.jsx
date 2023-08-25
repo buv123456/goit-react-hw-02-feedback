@@ -5,7 +5,7 @@ import css from './Statistics.module.css';
 export function Statistics({ entries, total, positivePercentage }) {
   const variant = parseInt(positivePercentage) > 50 ? 'bgGood' : 'bgBad';
   return (
-    <section className={css[variant]}>
+    <div className={css[variant]}>
       <h2>Statistics</h2>
       <div className={css.feedWrap}>
         {entries.map(i => (
@@ -23,7 +23,7 @@ export function Statistics({ entries, total, positivePercentage }) {
           <span className={css.span}>{positivePercentage}%</span>
         </p>
       </div>
-    </section>
+    </div>
   );
 }
 
